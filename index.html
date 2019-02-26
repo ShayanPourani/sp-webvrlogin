@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello there!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui;">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/server.js" defer></script>
+  </head>
+  <body style="text-align:center;background-color:grey;">
+    <div class="$hide">
+      <div class="center">
+        <p class="sansserifwelcome">Welcome!</p>
+        <form action="/myForm" method="post">
+          <p class="sansserif1" style="color:white;">Email<span style="color:orange;font-size:20px;">:</span></p>
+          <input type="email" name="email" value="$email" class="myinputs"><span class="sansserif1" style="color:orange">$errorEmail</span><br>
+          <p class="sansserif1" style="color:white;">Password<span style="color:orange;font-size:20px;">:</span></p>
+          <input type="password" name="password" value="$password" class="myinputs"><span class="sansserif1" style="color:orange">$errorPassword</span><br><br>
+
+          <input class="btn btn1" type="submit" value="Create Account" name="create">
+          <input class="btn btn1" type="submit" name="login" $onclick value="Log In">
+                    
+          <br><span class="sansserif1" style="color:orange">$accountCreated</span><span class="sansserif1" style="color:orange">$errorLogin</span>
+
+          <p class="sansserif1">Continue as <input type="submit" name="guest" class="sansserifguest" value="guest"></p>
+          <br>
+          <br>
+          <div class="tooltip">About this webVR game!
+            <span class="tooltiptext" style="margin-left:-15px;">This is a "dodge-the-blocks" AFRAME webVR experience that can be played via Samsung GearVR headset or desktop browser window.<br>The game is currently in the prototype stage, with new 3D models and improved mechanics on the way.</span>
+          </div>
+          <br>
+          <br>
+          <div class="tooltip">Need help?
+            <span class="tooltiptext">If this is your first visit, feel free to fill out the fully functional login form and create an account.<br>Otherwise you may proceed to the game as a guest.</span>
+          </div>
+        </form>     
+      </div>
+    </div>
+    <div class="$show" style="text-align:center">
+      <div class="center">
+        <p class="sansserifwelcome">Choose Your Platform</p><br><br>
+        <form action="/myForm" method="post">  
+          <input class="otherbtn otherbtn1" name="gearvrbtn" type="submit" value="Samsung GearVR"><br>
+          <input class="otherbtn otherbtn1" name="desktopbtn" type="submit" value="Desktop/Mobile"><br><br>
+          <input class="btn btn1" style="padding:10px 10px;width:25%;" type="submit" name="logout" value="Return/Sign Out">
+        </form>
+        <br><div class="tooltip">Need help?
+          <span class="tooltiptext">You may open the game via Samsung GearVR headset or on your desktop browser.<br>Please note these are both in the prototype stage.</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

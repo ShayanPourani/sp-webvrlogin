@@ -1,0 +1,191 @@
+body {
+  cursor:default;}
+
+.btn{
+  background-color:grey;
+  cursor:pointer;
+  border: none;
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;}
+
+.btn1{
+  width:250px;
+  background-color:grey;
+  color:white;
+  border:2px solid orange;
+  position:relative;}
+
+.btn1:hover{
+  background-color:orange;
+  color:white;}
+
+.sansserif{
+  font-family:Arial, Helvetica, sans-serif;
+  text-align:center;
+  font-size:38px;
+  color:white;}
+
+.sansserif1{
+  font-family:Arial, Helvetica, sans-serif;
+  text-align:center;
+  color:white;}
+
+.sansserifguest{
+  font-family:Arial, Helvetica, sans-serif;
+  color:orange;
+  text-decoration:none;
+  transition-duration:0.4s;
+  background-color:transparent;
+  cursor:pointer;
+  border:none;
+  padding:0px 0;
+  font-size:16px;}
+
+.sansserifguest:hover{
+  color:white;}
+
+.sansserifwelcome{
+  font-family:Arial, Helvetica, sans-serif;
+  color:white;
+  font-size:65px;
+  margin:auto;
+  padding:20px 0;}
+
+.center{
+  margin:0 auto;
+  padding:50px 0;}
+
+.tooltip{
+  position:relative;
+  display:inline-block;
+  font-family:Arial, Helvetica, sans-serif;
+  color:white;
+  font-size:18px;}
+
+.tooltip:hover{
+  color:orange;
+  cursor:default;} 
+
+.tooltip .tooltiptext{
+  visibility:hidden;
+  width:200px;
+  background-color:orange;
+  color:white;
+  text-align:center;
+  border-radius: 10px;
+  padding: 15px 15px;
+  position:absolute;
+  z-index: 1;
+  bottom:125%;
+  left:0%;
+  margin-left:-70px;
+  opacity:0;
+  transition: opacity 0.3s;}
+
+.tooltip .tooltiptext::after{
+  content: "";
+  position:absolute;
+  top:100%;
+  left:50%;
+  margin-left:-5px;
+  border-width:5px;
+  border-style:solid;
+  border-color:orange transparent transparent transparent;}
+
+.tooltip:hover .tooltiptext{
+  visibility: visible;
+  opacity:1;}
+
+.myinputs{
+  width:50%;
+  padding:13px 27px;
+  font-size:15px;
+  text-align:left;
+  color:orange;}
+
+input[type=password]{
+  transition-duration:0.5s;
+  outline:none;
+  border:none;}
+
+input[type=password]:focus{
+  background-color:orange;
+  border: none;
+  color:white;}
+
+input[type=password]:hover{
+  background-color:orange;
+  border:none;
+  color:white;}
+
+input[type=email]{
+  transition-duration:0.5s;
+  outline:none;
+  border:none;}
+
+input[type=email]:focus{
+  background-color:orange;
+  border:none;
+  color:white;}
+
+input[type=email]:hover{
+  background-color:orange;
+  border:none;
+  color:white;}
+
+.hidden{
+  display:none;}
+
+.otherbtn{
+  background-color:grey;
+  cursor:pointer;
+  border: none;
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;}
+
+.otherbtn1{
+  width:50%;
+  background-color:grey;
+  color:white;
+  border:2px solid orange;
+  position:relative;}
+
+.otherbtn1:hover{
+  background-color:orange;
+  color:white;}
+
+.logout{
+  background-color:grey;
+  cursor:pointer;
+  border:none;
+  color:white;
+  padding:5px 10px;
+  text-align:center;
+  text-decoration:none;
+  display: inline-block;
+  font-size:16px;
+  margin:4px 2px;
+  transition-duration:0.4s;}
+
+.logout1{
+  width:50%;
+  background-color:grey;
+  color:white;
+  border:2px solid orange;
+  position:relative;}
+
+.logout1:hover{
+  background-color:orange;
+  color:white;}
